@@ -8,7 +8,6 @@ def create_user():
     last_name = input("Last_name: ")
     email_ = input("Email: ")
     password_user = prompt("Password: ", is_password=True)
-    #two password for confirmation
     user = db.session.query(User).filter_by(email=email_).first()
     if user == None:
         new_user = User(name=name, last_name=last_name, email=email_)
