@@ -10,7 +10,7 @@ git clone <repo-url>
 ```
 
 ```bash
-pip install sqlalchemy prompt_toolkit werkzeug.security
+pip install sqlalchemy prompt_toolkit Werkzeug
 ```
 
 ## Running The App
