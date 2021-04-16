@@ -21,9 +21,9 @@ MENU_USER = """ -- Tasks app --
 user_login = None
 def main():
     global user_login
-    runnning= True
+    runnning = True
     while runnning:
-        if user_login == None:
+        if user_login is None:
             user_input = input(MENU_PROMT)
             if user_input == "1":
                 auth.create_user()
@@ -33,7 +33,7 @@ def main():
                 tasks.search_by_user()
             elif user_input == "4":
                 tasks.all_tasks()
-            elif user_input == "5" :
+            elif user_input == "5":
                 runnning = False
             else:
                 print("Invalid command")
@@ -55,5 +55,6 @@ def main():
                 user_login = None
             else:
                 print("Invalid command\n")
+
 
 main()
